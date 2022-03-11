@@ -1,0 +1,9 @@
+.env fuh dakchi ta3 databse
+
+------------route---------
+Route::get($url,$callback) 3tini
+Route::psot($url,$callback) haka upload 
+Route::put($url,$callback) mis a jeur
+Route::patch($url,$callback) bhal put
+Route::delete($url,$callback)
+Route::get($url,$callback)
