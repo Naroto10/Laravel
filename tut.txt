@@ -1,9 +1,56 @@
 .env fuh dakchi ta3 databse
 
-------------route---------
+------------route=thdid rousserce=URL bhal fb.com/---------
 Route::get($url,$callback) 3tini
 Route::psot($url,$callback) haka upload 
 Route::put($url,$callback) mis a jeur
 Route::patch($url,$callback) bhal put
 Route::delete($url,$callback)
 Route::get($url,$callback)
+-------------------------------------------
+route tnhdmo bzf b class hsn ama fonction tankhdmuha ga bx nverfyu
+1-ana bgit fb/bout tymxi l #route hada ty3tina class lu fuh repense control u mnb3d tysuft views
+
+
+model= objet tymtli ga haja whda sf
+cotrol = idart les models
+bgit nzid xu haja (todo) tanjudha mn khlila control
+model m3ndhach 3l9a b vue
+control hwa li tatkun fuh methodat ta3 CRUD ,u hwa li ty3yt l view
+        //hada todo rh objet aykhna nhdod bdbt xno bgina "content" rh vraible "attribu"
+
+method control:
+-<>index() //show all toDB
+-<>store(Request $request) // save todo
+-<>show($id) // todo whda
+-<>update($id ,Request $request) //update todo
+-<>delete($id)
+data base == Migrations :
+1-kola use taytklf b xu DB
+2-squma= haykala = DB
+3-kola T-DB khsha primary key
+4-php artisan make:migration create_smiyata3 table fkhr zid s_table //cretaion now table
+----------------------------------------------------------------------------------
+Schema::create('users', function (Blueprint $table) //users=smiya ta3 la table //Blueprint = clss
+{
+       //unsignedBigInteger = m3mro ikun salib
+            $table->increments('id'); //increments=auto incrmint y3ni kola khtra ayb9a itzad buhdo
+            $table->bigIncrements('id2');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->rememberToken();
+            $table->timestamps();
+        });
+-----------------------------------------------------------------------------------------------------
+
+Eloquent ORM = obect reaction maping
+consept ay table 3ndha class
+
+mimi nbgi n cree xu class khsi nrd lbal ljuj hwyj
+1-smita tbda b hrf kbir 1-Todo
+2-tkun smiya mofrad
+model=class=>php artisan make:model Todo
+
+
+reflection
